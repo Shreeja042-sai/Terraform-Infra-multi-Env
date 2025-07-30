@@ -2,7 +2,7 @@
 
 resource "aws_key_pair" "deployer" {
     key_name = "terra-multi-env"
-    public_key = file("C:/Users/psais/OneDrive/Documents/Shreeja/terra-multi-env.pub")
+    public_key = file("C:/Users/psais/OneDrive/Documents/aws_multi_env/terra-multi-env.pub")
 }
 
 #Default VPC
