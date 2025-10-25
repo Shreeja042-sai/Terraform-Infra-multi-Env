@@ -22,20 +22,20 @@ Terraform → AWS Provider → Modules → Environment-Specific Infrastructure
 ## Project Structure
 
 ```plaintext
+├── Image/
+│   └── Terraform-Infr-Design.jpg
 ├── aws_infra/
-│   ├── main.tf
-│   ├── outputs.tf
-│   ├── security.tf
-│   └── variables.tf
+│    ├── my_bucket.tf
+│    ├── my_instance.tf
+│    ├── my_table.tf
+│    ├── my_variables.tf
+│    └── outputs.tf
 │
-├── terra-multi-env/
-│   ├── main.tf
-│   ├── terraform.tf
-│   ├── terraform.tfvars
-│   └── terra-multi-env.pub
-│
-├── docs/
-│   └── architecture.png
+├── README.md
+├── main.tf
+├── outputs.tf
+├── security.tf
+├── terraform.tf
 │
 ├── .gitignore
 └── .terraform.lock.hcl
@@ -43,9 +43,7 @@ Explanation:
 
 aws_infra/: Module defining AWS infrastructure (VPC, EC2, Security Groups, etc.)
 
-terra-multi-env/: Root module calling aws_infra with different variables per environment.
-
-docs/: Contains project documentation such as architecture diagrams.
+Image/: Contains project documentation such as architecture diagrams.
 
 .terraform.lock.hcl: Provider version locking for consistency.
 
