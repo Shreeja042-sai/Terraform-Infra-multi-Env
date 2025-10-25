@@ -39,6 +39,7 @@ Terraform → AWS Provider → Modules → Environment-Specific Infrastructure
 │
 ├── .gitignore
 └── .terraform.lock.hcl
+
 Explanation:
 
 aws_infra/: Module defining AWS infrastructure (VPC, EC2, Security Groups, etc.)
