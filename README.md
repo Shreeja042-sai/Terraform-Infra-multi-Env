@@ -91,3 +91,13 @@ terraform apply -auto-approve  # Applies without manual confirmation
 terraform destroy  # Destroys all managed resources
 terraform destroy -auto-approve  # Without confirmation
 ```
+
+## **Learnings from this Project**
+
+- Modular infrastructure deployment with Terraform
+
+- Environment isolation using workspaces and variable files
+
+- AWS infrastructure automation (VPC, EC2, DynamoDB, S3)
+
+- Secure and repeatable deployments with Terraform backend and state locking
