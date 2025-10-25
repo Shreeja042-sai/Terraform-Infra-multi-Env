@@ -7,7 +7,7 @@ It follows best practices for modular Terraform configuration, remote state mana
 
 The following diagram illustrates the multi-environment setup:
 
-![Terraform Multi-Environment Architecture](docs/architecture.png)
+![Terraform Multi-Environment Architecture](Terraform-Infr-Design.jpg)
 
 ### Architecture Overview
 - **Terraform Workspaces** are used to isolate environments (`dev`, `qa`, `prod`) while reusing the same infrastructure code.
